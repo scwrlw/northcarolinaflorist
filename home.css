@@ -1,0 +1,93 @@
+
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: grid;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 5fr 2.5fr;
+    height: 100vh;
+}
+header {
+    grid-row: 1/2; grid-column: 1 / span 12;
+    margin: 0 auto;
+    width: 100%;
+    background-color: blanchedalmond;
+    text-align: center; 
+}
+
+.menubar {
+  display: grid;
+  grid-template: auto/ repeat(3, 1fr);
+  align-content: center;
+    text-decoration: underline;
+    list-style-type: none;
+  
+}
+
+.menubar li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+}
+.menubar li:hover a {
+    color:violet;
+}
+
+main {
+      grid-column: 1/span 12;
+     grid-row: 2/5;
+    align-content: center;
+      justify-content: center;
+    text-align: center;
+    background-image: url("https://www.clarkflower.com/gifs/hp-birthday.jpg");
+    opacity: .75;
+    background-repeat: no-repeat;
+    font-family: 'Merriweather', serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+p{
+    color: black;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 130px;
+    font-size: 55px;
+}
+div {
+    display: grid;
+     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr 2fr;
+    
+}
+.section1{
+    grid-column: 1/ span 6;
+    grid-row: 1/4;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: cadetblue;
+}
+.section2 {
+    grid-column: 7/ span 6;
+    grid-row: 1/2;
+    text-align: center;
+     font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: cadetblue;
+    
+    
+}
+footer {
+  grid-column: 1/ sp 12;
+  grid-row: 5/10;
+}
