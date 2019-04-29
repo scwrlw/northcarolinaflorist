@@ -1,0 +1,62 @@
+@media only screen and (max-width: 479px) {
+    .gridlayout {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40vh 100vh;
+        grid-template-areas: "home"
+            "desc";
+
+    }
+
+    .title {
+        font-size: 24pt;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        grid-area: home;
+    }
+  
+    .subtitle {
+        font-size: 12pt;
+        text-align: center;
+        color: white;
+        grid-area: home;
+  }
+
+    .desc {
+        font-size: 14pt;
+        text-align: center;
+        background-color: indianred;
+        color: white;
+        grid-area: desc;
+    }
+  
+    .container {
+        border-radius: 5px;
+        padding: 20px;
+}
+
+     input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+}
+
+     input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+  
+    .home {
+        background-image: url("https://images.pexels.com/photos/54320/rose-roses-flowers-red-54320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+        grid-area: home;
+    }
